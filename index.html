@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodShop</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Glightbox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+
+<body>
+    <!--Top Bar-->
+    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+        <div
+            class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+            <i class='bx bx-mobile-alt d-flex align-items-center'><span>+52 695 458 7852</span></i>
+            <i class='bx bx-time-five ms-4 d-none d-lg-flex align-items-center'><span>10:00 AM - 11:00 PM</span></i>
+        </div>
+    </section>
+    <!--Header-->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div
+            class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-between">
+            <div class="logo me-auto">
+                <h1><a href="index.html">FoodShop</a></h1>
+            </div>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+                    <li><a class="nav-link scrollto" href="#specials">Especiales</a></li>
+                    <li><a class="nav-link scrollto" href="#events">Eventos</a></li>
+                    <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Galeria</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+                </ul>
+                <i class='bx bx-menu mobile-nav-toggle'></i>
+            </nav>
+            <a href="#book-table" class="book-a-table-btn scrollto">Reservar</a>
+        </div>
+    </header>
+    <!--Hero-->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!--Slide 1-->
+                    <div class="carousel-item active" style="background-image: url(img/slide/slide-1.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate animate__fadeInDown"><span>FoodStop</span>
+                                    Restaurant</h2>
+                                <p class="animate__animated animate animate__fadeInUp">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Doloribus quod laborum mollitia deleniti tenetur non
+                                    excepturi ullam recusandae corrupti obcaecati nulla, animi eligendi, voluptate,
+                                    cumque voluptatibus quaerat officia sequi. Amet incidunt deleniti quod? Nobis rerum
+                                    incidunt saepe maxime obcaecati deserunt facilis nihil eum maiores voluptate.</p>
+                                <div>
+                                    <a href="#menu"
+                                        class="btn-menu animate__animated animate animate__fadeInUp scrollto">Menu</a>
+                                    <a href="#book-table"
+                                        class="btn-book animate__animated animate animate__fadeInUp scrollto">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 2-->
+                    <div class="carousel-item" style="background-image: url(img/slide/slide-2.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate animate__fadeInDown"><span>FoodStop</span>
+                                    Restaurant</h2>
+                                <p class="animate__animated animate animate__fadeInUp">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Doloribus quod laborum mollitia deleniti tenetur non
+                                    excepturi ullam recusandae corrupti obcaecati nulla, animi eligendi, voluptate,
+                                    cumque voluptatibus quaerat officia sequi. Amet incidunt deleniti quod? Nobis rerum
+                                    incidunt saepe maxime obcaecati deserunt facilis nihil eum maiores voluptate.</p>
+                                <div>
+                                    <a href="#menu"
+                                        class="btn-menu animate__animated animate animate__fadeInUp scrollto">Menu</a>
+                                    <a href="#book-table"
+                                        class="btn-book animate__animated animate animate__fadeInUp scrollto">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 3-->
+                    <div class="carousel-item" style="background-image: url(img/slide/slide-3.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate animate__fadeInDown"><span>FoodStop</span>
+                                    Restaurant</h2>
+                                <p class="animate__animated animate animate__fadeInUp">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Doloribus quod laborum mollitia deleniti tenetur non
+                                    excepturi ullam recusandae corrupti obcaecati nulla, animi eligendi, voluptate,
+                                    cumque voluptatibus quaerat officia sequi. Amet incidunt deleniti quod? Nobis rerum
+                                    incidunt saepe maxime obcaecati deserunt facilis nihil eum maiores voluptate.</p>
+                                <div>
+                                    <a href="#menu"
+                                        class="btn-menu animate__animated animate animate__fadeInUp scrollto">Menu</a>
+                                    <a href="#book-table"
+                                        class="btn-book animate__animated animate animate__fadeInUp scrollto">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--Nosotros-->
+    <section id="about" class="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 align-items-strech video-box" style="background-image: url(img/about.jpg);">
+                    <a href="https://youtu.be/7TcCIcE1hr8?si=5Nv2ZlOwUBz5XQsb" class="venobox play-btn mb-4"
+                        data-autoplay="true"></a>
+                </div>
+                <div class="col-lg-7 d-flex flex-colum justify-content-center align-items-strech">
+                    <div class="content">
+                        <h3>Lorem ipsum dolor sit <strong>Lorem ipsum dolor sit amet</strong></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ducimus veritatis sit
+                            iure odio odit delectus a, facilis error hic? Esse animi eveniet commodi ab.</p>
+                        <p class="fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse perferendis
+                            nulla, qui magni accusamus hic iure placeat sunt. Asperiores, quisquam.</p>
+                        <ul>
+                            <li><i class="bx bx-check-double"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eaque, reiciendis.</li>
+                            <li><i class="bx bx-check-double"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eaque, reiciendis.</li>
+                            <li><i class="bx bx-check-double"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Eaque, reiciendis.</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed iusto sequi in ratione
+                            animi doloremque exercitationem, praesentium ullam odit voluptate et quod aspernatur maxime.
+                            Adipisci blanditiis temporibus deleniti deserunt consectetur non suscipit dolore iure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Why Us?-->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Porque <span>Elegirnos?</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt non quod possimus voluptate, atque
+                    quasi.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box">
+                        <span>01</span>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, temporibus!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box">
+                        <span>02</span>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, temporibus!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box">
+                        <span>03</span>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, temporibus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu-->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Revisa nuestro <span>Menu</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-filters">
+                        <li data-filter="*" class="filter-active">Todo</li>
+                        <li data-filter=".filter-starters">Entradas</li>
+                        <li data-filter=".filter-salads">Ensaladas</li>
+                        <li data-filter=".filter-specialty">Especialidades</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row menu-container">
+                <div class="col-lg-6 menu-item filter-starters">
+                    <div class="menu-content">
+                        <a href="#">Crema de camaron</a><span>$120</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Crema de camaron con un toque de perejil
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <div class="menu-content">
+                        <a href="#">Medallon de atun</a><span>$180</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Medallon de atun con salsa de soya
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <div class="menu-content">
+                        <a href="#">fondue 3 quesos</a><span>$120</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Fondue de 3 quesos con pan
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <div class="menu-content">
+                        <a href="#">Ensalada Cesar</a><span>$140</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Ensalada Cesar con pollo
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <div class="menu-content">
+                        <a href="#">Filete al vino tinto</a><span>$340</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Filete al vino tinto con papas
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <div class="menu-content">
+                        <a href="#">Papas gajo</a><span>$100</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Papas con sason de la casa
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <div class="menu-content">
+                        <a href="#">Cararones imperiales</a><span>$345</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Cararones imperiales con arroz
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <div class="menu-content">
+                        <a href="#">Ensalada Griega</a><span>$130</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Ensalada Griega con queso feta
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <div class="menu-content">
+                        <a href="#">Ensalada thai con pollo</a><span>$121</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Ensalada thai
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Specials-->
+    <section id="specials" class="specials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestras <span>Especialidades</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum nostrum dolorem deserunt,
+                    necessitatibus ut.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a href="#tab-1" class="nav-link active show" data-bs-toggle="tab">Filete al vino tinto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-2" class="nav-link" data-bs-toggle="tab">Cararones imperiales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-3" class="nav-link" data-bs-toggle="tab">Ensalada Griega</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-4" class="nav-link" data-bs-toggle="tab">Ensalada thai</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-5" class="nav-link" data-bs-toggle="tab">Medallon de atun</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-9 mt-4 mt-lg-0">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Filete al vino tinto</h3>
+                                    <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptates explicabo quis vero ea, rem id.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum est eligendi
+                                        repudiandae nesciunt dignissimos natus commodi placeat maiores et neque.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="img/specials-1.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Cararones imperiales</h3>
+                                    <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptates explicabo quis vero ea, rem id.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum est eligendi
+                                        repudiandae nesciunt dignissimos natus commodi placeat maiores et neque.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="img/specials-2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Ensalada Griega</h3>
+                                    <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptates explicabo quis vero ea, rem id.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum est eligendi
+                                        repudiandae nesciunt dignissimos natus commodi placeat maiores et neque.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="img/specials-3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-4">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Ensalada thai</h3>
+                                    <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptates explicabo quis vero ea, rem id.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum est eligendi
+                                        repudiandae nesciunt dignissimos natus commodi placeat maiores et neque.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="img/specials-4.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-5">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Medallon de atun</h3>
+                                    <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptates explicabo quis vero ea, rem id.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum est eligendi
+                                        repudiandae nesciunt dignissimos natus commodi placeat maiores et neque.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="img/specials-5.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Events-->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Organiza tus <span>Eventos</span> en nuestro restaurante</h2>
+            </div>
+            <div class="events-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row event-item">
+                            <div class="col-lg-6">
+                                <img src="img/event-birthday.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                <h3>Fiestas de Cumpleaños</h3>
+                                <div class="price">
+                                    <p><span>$3500</span></p>
+                                </div>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ex omnis,
+                                    aspernatur
+                                    impedit
+                                    pariatur debitis ea sapiente quisquam rerum quaerat.
+                                </p>
+                                <ul>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat minus
+                                    neque
+                                    soluta
+                                    tempore aperiam, ipsam consequuntur dicta explicabo laboriosam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row event-item">
+                            <div class="col-lg-6">
+                                <img src="img/event-custom.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                <h3>Eventos privados</h3>
+                                <div class="price">
+                                    <p><span>$3500</span></p>
+                                </div>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ex omnis,
+                                    aspernatur
+                                    impedit
+                                    pariatur debitis ea sapiente quisquam rerum quaerat.
+                                </p>
+                                <ul>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat minus
+                                    neque
+                                    soluta
+                                    tempore aperiam, ipsam consequuntur dicta explicabo laboriosam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row event-item">
+                            <div class="col-lg-6">
+                                <img src="img/event-private.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                <h3>Fiestas de Cumpleaños</h3>
+                                <div class="price">
+                                    <p><span>$3500</span></p>
+                                </div>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ex omnis,
+                                    aspernatur
+                                    impedit
+                                    pariatur debitis ea sapiente quisquam rerum quaerat.
+                                </p>
+                                <ul>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                    <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.</li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat minus
+                                    neque
+                                    soluta
+                                    tempore aperiam, ipsam consequuntur dicta explicabo laboriosam?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!--Gallery-->
+    <section id="gallery" class="gallery">
+        <div class="container-fluid">
+            <div class="section-title">
+                <h2>Algunas fotos de <span>nuestro Restaurant</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quibusdam!</p>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-1.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-2.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-3.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-4.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-5.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-6.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-7.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="img/gallery/gallery-8.jpg" class="gallery-lightbox">
+                            <img src="img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Chef-->
+    <section id="chef" class="chef">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros <span>Chefs</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa et recusandae nam sequi, beatae odio.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="img/chefs/chefs-1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Master Chef</span>
+                            <div class="social">
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="img/chefs/chefs-2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h4>Taylor Swift</h4>
+                            <span>Pattiser</span>
+                            <div class="social">
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic">
+                            <img src="img/chefs/chefs-3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h4>Chan gay</h4>
+                            <span>Master Chef</span>
+                            <div class="social">
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonials-->
+    <section id="testimonials" class="testimonials">
+        <div class="container position-relative">
+            <div class="testimonials-slide swiper" data-aos="fade up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="img/testimonials/testimonials-1.jpg" class="testimonials-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Administrador</h4>
+                            <div class="star">
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star-half"></div>
+                            </div>
+                            <p>
+                                <i class="bx bxs-quote-alt-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae debitis hic, autem
+                                ut amet?
+                                <i class="bx bxs-quote-alt-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="img/testimonials/testimonials-2.jpg" class="testimonials-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Administrador</h4>
+                            <div class="star">
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star-half"></div>
+                                <div class="bx bx-star"></div>
+                                <div class="bx bx-star"></div>
+                            </div>
+                            <p>
+                                <i class="bx bxs-quote-alt-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae debitis hic, autem
+                                ut amet?
+                                <i class="bx bxs-quote-alt-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="img/testimonials/testimonials-3.jpg" class="testimonials-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Administrador</h4>
+                            <div class="star">
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bx-star"></div>
+                                <div class="bx bx-star"></div>
+                                <div class="bx bx-star"></div>
+                            </div>
+                            <p>
+                                <i class="bx bxs-quote-alt-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae debitis hic, autem
+                                ut amet?
+                                <i class="bx bxs-quote-alt-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="img/testimonials/testimonials-4.jpg" class="testimonials-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Administrador</h4>
+                            <div class="star">
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star-half"></div>
+                            </div>
+                            <p>
+                                <i class="bx bxs-quote-alt-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae debitis hic, autem
+                                ut amet?
+                                <i class="bx bxs-quote-alt-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="img/testimonials/testimonials-5.jpg" class="testimonials-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Administrador</h4>
+                            <div class="star">
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                                <div class="bx bxs-star"></div>
+                            </div>
+                            <p>
+                                <i class="bx bxs-quote-alt-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae debitis hic, autem
+                                ut amet?
+                                <i class="bx bxs-quote-alt-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!--Contact-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2><span>Contacta</span> hoy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, voluptatibus.</p>
+            </div>
+        </div>
+        <div class="map">
+            <iframe style="border: 0; width: 100%; height: 350px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1838.544173287379!2d-105.77883449867784!3d22.83622070806621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869ee27951830f5d%3A0x82ece5fbef9c9893!2zUGFzdGVsZXLDrWEgUGFuYW3DoQ!5e0!3m2!1ses-419!2smx!4v1741360164963!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container mt-5">
+            <div class="info-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 info">
+                        <i class="bx bx-map"></i>
+                        <h4>Ubicacion:</h4>
+                        <p>La Florida 100 <br>Mazatlan, Sin.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <i class="bx bx-time"></i>
+                        <h4>Horario:</h4>
+                        <p>Lunes-Sabado: <br>11:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <i class="bx bx-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>info@FoodShop.com <br>contacto@foofShop.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <i class="bx bx-mobile-alt"></i>
+                        <h4>Telefono:</h4>
+                        <p>669 456 7896 <br>669 123 4578</p>
+                    </div>
+                </div>
+            </div>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                    <div class="col-lg-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="col-lg-6 form-group mt-3 mt-md-0">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Tu Email"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Asusnto"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea name="message" class="form-control" rows="5" placeholder="Tu Mensaje"
+                            required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"> Enviar Mensaje</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="container">
+            <h3>Foof Stop</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum quibusdam itaque nostrum, sunt
+                nobis!</p>
+            <div class="social-links">
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Derechos Reservados <strong><span>FoodShop</span></strong>. Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
